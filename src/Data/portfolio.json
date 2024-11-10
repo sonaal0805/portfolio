@@ -5,7 +5,7 @@
             "title": "WE2WE App",
             "description": "A social media app where users can not only create, like, comment, share, and edit multimedia posts, but also follow other users. The program also includes real-time chat and notification features.",
             "skills":"React, Redux, NodeJs, Express, MongoDb, Socket Io, HTML, CSS3",
-            "url":"https://we2weapp.herokuapp.com/auth"
+            "url":"https://we2we.org/"
         },
         {
             "cover": "/portfolio/AmazonClone/thumbnail2.png",
