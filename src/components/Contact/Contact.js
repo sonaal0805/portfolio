@@ -63,9 +63,6 @@ const Contact = ()=>{
       e.preventDefault()
 
       setSendingEmail(true)
-
- 
-
       await emailjs
         .sendForm(
           process.env.REACT_APP_EMAIL_JS_SERVICE_ID, 
@@ -80,11 +77,6 @@ const Contact = ()=>{
         
         )
        setSendingEmail(false)
-
-
-       
-
-        
   }
 
     return(
@@ -156,9 +148,8 @@ const Contact = ()=>{
           <div className = 'info-map'>
             Sonal Chandra
             <br/>
-            B502, Postgraduate Hall 4 <br/>
             The Chinese University of Hong Kong, Sha Tin, Hong Kong <br/>
-            <span>1155165296@link.cuhk.edu.hk</span>
+            <span>sonalchandra@link.cuhk.edu.hk</span>
 
           </div>
 
@@ -173,16 +164,7 @@ const Contact = ()=>{
 
             </MapContainer>
 
-
-
-
-
           </div>
-
-   
-          
-        
-
         </div>
         <Loader type = "pacman"/>
 
