@@ -2,7 +2,6 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://sonaal0805.github.io",
   "dependencies": {
     "-": "^0.0.1",
     "@emailjs/browser": "^3.7.0",
@@ -14,12 +13,14 @@
     "@mantine/core": "^5.5.4",
     "@mantine/hooks": "^5.5.4",
     "@mantine/notifications": "^5.5.4",
+    "@material-ui/core": "^4.12.4",
     "@tabler/icons": "^1.101.0",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "animate.css": "^4.1.1",
     "emailjs-com": "^3.2.0",
+    "firebase": "^9.11.0",
     "gh-pages": "^4.0.0",
     "gsap-trial": "^3.11.1",
     "leaflet": "^1.9.2",
@@ -40,9 +41,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [

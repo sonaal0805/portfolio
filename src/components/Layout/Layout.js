@@ -19,7 +19,6 @@ const Layout = () => {
       </div>
         <div className = "particlesBg">
             <ParticlesBg/>
-
         </div>
     </div>
   )

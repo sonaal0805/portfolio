@@ -5,20 +5,26 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 import { NotificationsProvider } from '@mantine/notifications';
-
+import { HashRouter } from 'react-router-dom'
 import { MantineProvider } from '@mantine/core';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
+    {/* <BrowserRouter> */}
+    <HashRouter>
       <MantineProvider>
         <NotificationsProvider position = 'top-left'>
-          <App />
+          
+            <App />
+
+          
+          
         </NotificationsProvider>
       </MantineProvider>
       
-    </BrowserRouter>
+    {/* </BrowserRouter> */}
+    </HashRouter>
     
   </React.StrictMode>
 );

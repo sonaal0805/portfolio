@@ -1,5 +1,5 @@
-html{
-  font-size: 62.5%
+html {
+  font-size: 62.5%;
 }
 
 body {
@@ -8,12 +8,19 @@ body {
   color: #444;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #022c43;
+  /* background: #022c43; */
+  background: black;
   overflow: hidden;
   display: block;
 }
 
-/* code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-} */
+.dashboard {
+  margin-top: 200px;
+  margin-left: 200px;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    overflow: visible;
+  }
+}

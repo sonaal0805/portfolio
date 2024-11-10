@@ -1,0 +1,33 @@
+{
+    "portfolio":[
+        {
+            "cover": "/portfolio/We2We/thumbnail2.png",
+            "title": "WE2WE App",
+            "description": "A social media app where users can not only create, like, comment, share, and edit multimedia posts, but also follow other users. The program also includes real-time chat and notification features.",
+            "skills":"React, Redux, NodeJs, Express, MongoDb, Socket Io, HTML, CSS3",
+            "url":"https://we2weapp.herokuapp.com/auth"
+        },
+        {
+            "cover": "/portfolio/AmazonClone/thumbnail2.png",
+            "title": "Amazon Clone",
+            "description": "Amazon Clone allows users to add and edit items in their shopping cart, view their previous orders, and make payments using their credit card.",
+            "skills":"React, NodeJs, Express, Firebase, HTML, CSS3",
+            "url":"https://clone-583f5.web.app/"
+        },
+        {
+            "cover": "/portfolio/PlfApp/thumbnail1.png",
+            "title": "PLF Application",
+            "description": "PLF App is a mini-employee management system that allows the admin to manage all the administrative tasks related to the Peer Learning Facilitation program such as user authentication, generating schedules, claim form collection and verification, sending reminder emails, and generating sessions’ information files.",
+            "skills":"Python, Flask, GCP, HTML, Bootstrap, CSS3",
+            "url":"https://www.youtube.com/watch?v=N9cg1joz_50"
+        },
+        {
+            "cover": "/portfolio/MediaWatch/thumbnail1.png",
+            "title": "Media Watch",
+            "description": "A visual representation of polarization of Indian media. The word clouds give us an insight on the frequently used words by different Indian news shows. I used YouTube video titles of 46 major news shows from India between August 2016 and June 2020 and Latent-Dirichlet Allocation algorithm for topic modelling and data visualization respectively.",
+            "skills":"Python, NLP, LDA Visualization, HTML",
+            "url":"https://sochandra.github.io/media_project/index.html"
+        }
+        
+    ]
+}

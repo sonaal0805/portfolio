@@ -98,10 +98,10 @@ const ParticlesBg = () =>{
                     },
                     move: {
                         enable: true,
-                        speed: 0.6,
-                        direction: "None",
+                        speed: 0.4,
+                        direction: "none",
                         random: true,
-                        straight: false,
+                        straight: true,
                         out_mode: "out",
                         bounce: true,
                         attract: {

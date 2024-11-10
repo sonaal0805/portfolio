@@ -2,8 +2,10 @@ import { faCss3, faGitAlt, faHtml5, faJsSquare, faNode, faNodeJs, faPython, faRe
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useEffect, useState } from 'react'
 import Loader from 'react-loaders'
+import { Link } from 'react-router-dom'
 import AnimatedLetters from '../AnimatedLetters/AnimatedLetters'
 import ParticlesBg from '../Particles/Particles'
+import cv from '../../assets/cv_sonal.pdf'
 
 import './About.scss'
 
@@ -27,7 +29,7 @@ const About = () =>{
                 <h1>
                     <AnimatedLetters
                     letterClass={letterClass}
-                    strArray={"About".split("")}
+                    strArray={"About me".split("")}
                     idx = {15}
                     />
                 </h1>
@@ -47,8 +49,11 @@ const About = () =>{
                 
                 <p>
                     If I need to define myself in one sentence that would be a travel enthusiast, a bike lover, 
-                    a cricket maniac, and tech-obsessed!! 
+                    a cricket maniac, and a tech-obsessed!! 
 
+                </p>
+                <p>
+                    Visit <a href = "https://www.linkedin.com/in/sonal-chandra-a41b53141/" target='_blank' rel='noopener noreferrer'>my LinkedIn profile</a> for more details. You can also checkout <a href = {cv} target='_blank' rel='noopener noreferrer'>my CV using this link.</a> 
                 </p>
 
             </div> 

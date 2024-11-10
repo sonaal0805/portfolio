@@ -5,6 +5,7 @@
     position: initial;
     height: 100%;
     overflow: auto;
+    
 
     h1.page-title {
         margin-left: 100px;
@@ -25,7 +26,8 @@
         overflow: hidden;
         border-radius: 10px;
         max-width: calc(25% - 10px);
-
+        cursor: pointer;
+      
         .portfolio-image {
             position: absolute;
             z-index: 2;
@@ -36,14 +38,15 @@
 
         .content {
             position: absolute;
-            width: 100%;
+            width: 90%;
+            height: 45%;
             z-index: 3;
             padding: 10px 20px;
             transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
             background: linear-gradient(180deg,
-                    rgba(0, 0, 0, 0.2) 0,
+                    rgba(0, 0, 0, 0.5) 0,
                     rgba(0, 0, 0, 1));
-            bottom: -70px;
+            bottom: -80px;
         }
 
         .title {
@@ -55,14 +58,23 @@
             line-height: 24px;
         }
 
-        .description {
+        .skills {
             font-size: 14px;
             margin-bottom: 5px;
             color: #fff;
             font-weight: 700;
         }
+        .description {
+            font-size: 13px;
+            margin-bottom: 5px;
+            color: #fff;
+            font-weight: 500;
+            display: none;
+           
+        }
 
         .btn {
+            display: none;
             margin-top: 30px;
             margin-bottom: 10px;
             padding: 0 23px;
@@ -82,6 +94,7 @@
         .btn:hover {
             transform: translateY(-3px);
             background: #ffd700;
+            color: black;
         }
 
         &:after {
@@ -105,7 +118,54 @@
 
         &:hover .content {
             bottom: 0;
+            height: 90%;
             background: transparent;
         }
+        &:hover .description{
+            display: block;
+        }
+        &:hover .btn {
+            display: block;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .portfolio-list{
+        // border: 1px solid red;
+        height: 200vh;
+        overflow: scroll;
+        overflow-y: hidden;
+        display: flex;
+        gap:40px;
+       
+        .images-container {
+            display: flex;
+            overflow: scroll;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            width: 98%;
+            height: 100%;
+
+            .image-box {
+                flex: 1;
+                height: 500px;
+                width: 100%;
+                max-width: 100%;
+
+                .content{
+                    background: linear-gradient(180deg,
+                                rgba(0, 0, 0, 0.5) 0,
+                                rgba(0, 0, 0, 1));
+                }
+                &:hover .content {
+                    bottom: 0;
+                    height: 90%;
+                    background: transparent;
+                }
+            }
+           
+        }
+
     }
 }

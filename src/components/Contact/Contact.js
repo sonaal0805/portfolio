@@ -94,7 +94,7 @@ const Contact = ()=>{
           <div className = 'text-zone'>
             <h1>
               <AnimatedLetters
-              strArray={['C','o','n','t','a','c','t',' ','m','e']}
+              strArray={"Contact me".split("")}
               idx = {15}
               letterClass = {letterClass}
               />
@@ -168,7 +168,7 @@ const Contact = ()=>{
 
               <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
               <Marker position={[22.420975,114.204947]}>
-                <Popup>Sonal lives here, come over for a cup of coffee! : </Popup>
+                <Popup>I live here, come over for a cup of coffee!</Popup>
               </Marker>
 
             </MapContainer>
